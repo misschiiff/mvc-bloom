@@ -1,0 +1,34 @@
+#uniqueMain .slideshow-container {
+    width: 100%;
+    /* Adjust as needed */
+    overflow: hidden;
+    animation: slide 10s linear infinite;
+    white-space: nowrap;
+    /* Optional, only if you want to keep slides on a single line */
+}
+
+#uniqueMain .slideshow-content {
+    width: 100%;
+    display: inline-block;
+    /* Ensure all slides are displayed side by side */
+    background-color: #f0f0f0;
+    /* Set your desired background color */
+    animation: scroll 10s linear infinite;
+    /* Adjust duration as needed */
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+}

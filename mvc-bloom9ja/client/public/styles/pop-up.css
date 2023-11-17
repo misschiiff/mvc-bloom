@@ -1,0 +1,73 @@
+/* Existing CSS styles for your website */
+
+
+/* New section styles */
+
+.social-section {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #00FF00;
+    /* Green background color */
+    width: 50px;
+    /* Adjust width as needed */
+    height: 50px;
+    /* Adjust height as needed */
+    border-top-right-radius: 100px;
+    /* Round the top-right corner */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    transition: width 0.3s;
+}
+
+.social-button {
+    width: 50px;
+    /* Adjust button size as needed */
+    height: 50px;
+    /* Adjust button size as needed */
+    background-color: #333;
+    /* Button background color */
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon {
+    width: 30px;
+    /* Adjust icon size as needed */
+    height: 30px;
+    /* Adjust icon size as needed */
+    background-color: #fff;
+    /* Icon color */
+    border-radius: 50%;
+}
+
+.social-menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-item {
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+
+/* Styling for social icons when menu is open */
+
+.social-section.expanded {
+    width: 200px;
+    /* Adjust width as needed */
+}
+
+
+/* End of new section styles */
